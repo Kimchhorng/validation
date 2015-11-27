@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SSN validation</title>
+	<script type="text/javascript">
+		function isNumberKey(evt){
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode != 45 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+      	}
+	</script>
+</head>
+<body>
+	<form action="#" method="get">
+		<div>
+			<label>ssn</label>
+			<input type="text" placeholder="xxx-xx-xxxx" id="txtSSN" maxlength="11" onkeypress="return isNumberKey(event)" onpaste="return false">
+		</div>
+		
+	</form>
+
+</body>
+</html>
